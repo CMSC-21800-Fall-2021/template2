@@ -1,4 +1,1 @@
-scratch.py , True, 1636473662.7570581 , error_code: 0 
-load.py , False, 1636473695.054781 , error_code: 0 
-plot.py , False, 1636473702.354796 , error_code: 1 
-plot.py , False, 1636473728.901216 , error_code: 0 
+
