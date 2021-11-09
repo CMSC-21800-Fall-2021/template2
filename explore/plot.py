@@ -17,6 +17,6 @@ def plot(df):
 
 #The main() function  of this program
 if __name__ == "__main__":
-    df = pd.read_csv('clean.csv')
+    cdf = pd.read_csv('clean.csv')
     plot(cdf)
     plt.savefig('plot.png')
