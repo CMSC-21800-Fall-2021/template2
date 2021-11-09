@@ -1,2 +1,3 @@
-# template
-Template Repository for the Last Assignment
+# README
+cnet_id: #
+name: #
