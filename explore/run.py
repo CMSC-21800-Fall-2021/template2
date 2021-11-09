@@ -37,10 +37,10 @@ def add_commit(id, check_changed = True, push = True):
         changed = True    
         
     if changed:
-        repo.git.add('scratch.py')
-        repo.git.add('load.py')
-        repo.git.add('plot.py')
-        repo.git.add('runs.txt')
+        repo.git.add('explore/scratch.py')
+        repo.git.add('explore/load.py')
+        repo.git.add('explore/plot.py')
+        repo.git.add('explpre/runs.txt')
         
         repo.git.commit('-m', id)
         if push:
