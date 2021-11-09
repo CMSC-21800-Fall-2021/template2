@@ -29,7 +29,7 @@ def add_commit(id, check_changed = True, push = True):
     Add current changes and commit
     """
     # need to check if anything in repo has changed
-    repo = Repo(os.getcwd().parent)
+    repo = Repo(os.path.dirname(os.getcwd())) #changed to look at the parent
     
     if check_changed:
         changed = check_diff(repo)
