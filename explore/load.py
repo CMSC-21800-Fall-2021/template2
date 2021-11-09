@@ -2,6 +2,9 @@
 csv file.
 '''
 
+#standard imports
+import pandas as pd
+
 
 def load(filename):
   '''load(filename) takes as input a filename and loads a dataframe.
