@@ -29,7 +29,7 @@ def add_commit(id, check_changed = True, push = True):
     Add current changes and commit
     """
     # need to check if anything in repo has changed
-    repo = Repo(os.getcwd())
+    repo = Repo(os.getcwd().parent)
     
     if check_changed:
         changed = check_diff(repo)
@@ -52,6 +52,13 @@ def add_commit(id, check_changed = True, push = True):
 
       
 if __name__ == '__main__':
+    
+    ##error checking
+    if len(len(sys.argv)) == 1:
+        print("You must run the program as follows: python run.py scratch.py \n or \n python run.py load.py \n or \n python run.py plot.py")
+        exit()
+    
+              
     id = str(time.time())
     committed = add_commit(id + '_start', push = False)
     
