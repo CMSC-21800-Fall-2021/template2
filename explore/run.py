@@ -37,7 +37,7 @@ def add_commit(id, check_changed = True, push = True):
         changed = True    
         
     if changed:
-        repo.git.add('explore/*')
+        repo.git.add('.')
         
         repo.git.commit('-m', id)
         if push:
