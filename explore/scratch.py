@@ -42,7 +42,7 @@ def plot(df):
 #The main() function  of this program
 
 if __name__ == "__main__":
-    df = load('data.csv')
+    df = load('data_2.csv')
     cdf = clean(df)
     plot(cdf)
     plt.show()

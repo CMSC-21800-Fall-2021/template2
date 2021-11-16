@@ -24,6 +24,6 @@ def clean(df):
 #The main() function  of this program
 
 if __name__ == "__main__":
-    df = load('data.csv')
+    df = load('data_2.csv')
     cdf = clean(df)
     cdf.to_csv('clean.csv')

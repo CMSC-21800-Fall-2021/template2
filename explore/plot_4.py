@@ -19,4 +19,4 @@ def plot(df):
 if __name__ == "__main__":
     cdf = pd.read_csv('clean.csv')
     plot(cdf)
-    plt.savefig('plot.png')
+    plt.savefig('plot_4.png')
